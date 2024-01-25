@@ -20,7 +20,7 @@ current_task_id = 0 # A global variable to store the current task id
 
 
 
-@app.route("/", methods=['GET', 'POST'])
+@app.route("/tasks", methods=['GET', 'POST'])
 def manage_tasks():
     global current_task_id # Use the global variable
     if request.method == 'GET':
